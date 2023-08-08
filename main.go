@@ -23,7 +23,7 @@ var (
 	prefix              = app.Flag("prefix", "set a custom prefix").Default("v").String()
 	stripPrefix         = app.Flag("strip-prefix", "strips the prefix from the tag").Default("false").Bool()
 	preRelease          = app.Flag("pre-release", "adds a pre-release suffix to the version, without the semver mandatory dash prefix").String()
-	build               = app.Flag("build", "adds a build suffix to the version, without the semver mandatory plug prefix").String()
+	build               = app.Flag("build", "adds a build suffix to the version, without the semver mandatory plus prefix").String()
 	directory           = app.Flag("directory", "specifies directory to filter commit messages by").Default("").String()
 	tagMode             = app.Flag("tag-mode", "determines if latest tag of the current or all branches will be used").Default("current-branch").Enum("current-branch", "all-branches")
 	forcePatchIncrement = nextCmd.Flag("force-patch-increment", "forces a patch version increment regardless of the commit message content").Default("false").Bool()
